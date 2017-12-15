@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7AB5B47C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YGNaviagationService", "YGNaviagationService\YGNaviagationService.csproj", "{2FF141A0-891C-422F-AF6E-D9D1349DF5E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YGNaviagationServiceTests", "Tests\YGNaviagationService.NUnit.Tests\YGNaviagationServiceTests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YGNaviagationServiceTests", "Tests\YGNaviagationServiceTests\YGNaviagationServiceTests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
