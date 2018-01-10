@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace YG.ViewModel
 {
-    public class BaseViewModel :IViewModel, INotifyPropertyChanged
+    public class BaseViewModel : IViewModel, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

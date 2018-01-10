@@ -1,12 +1,13 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using YG.View;
 
 namespace NavigationTesting.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FourthView : ContentPage
+    public partial class ThirdView : ContentPage, IView
     {
-        public FourthView()
+        public ThirdView()
         {
             InitializeComponent();
         }

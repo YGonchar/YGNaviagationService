@@ -20,21 +20,21 @@ namespace YGNaviagationServiceTests.ViewController
             _mockView = new Mock<IView>();
         }
 
-        [Test]
-        public void Should_return_view_from_viewModelType()
-        {
-            _viewLocationMock
-                .Setup(location => location.FindView(It.Is<Type>(type => typeof(IViewModel).IsAssignableFrom(type))))
-                .Returns(_mockView.Object).Verifiable();
+        //[Test]
+        //public void Should_return_view_from_viewModelType()
+        //{
+        //    _viewLocationMock
+        //        .Setup(location => location.FindView(It.Is<Type>(type => typeof(IViewModel).IsAssignableFrom(type))))
+        //        .Returns(_mockView.Object).Verifiable();
 
-            var controller = new YG.Controllers.ViewController(_viewLocationMock.Object);
-            var view = controller.GetView(typeof(FakeViewModel));
+        //    var controller = new YG.Controllers.ViewController(_viewLocationMock.Object);
+        //    var view = controller.GetView(typeof(FakeViewModel));
 
-            _viewLocationMock.Verify(location => location.FindView(It.Is<Type>(type => typeof(IViewModel).IsAssignableFrom(type))), Times.AtLeast(1));
-            Assert.NotNull(view);
+        //    _viewLocationMock.Verify(location => location.FindView(It.Is<Type>(type => typeof(IViewModel).IsAssignableFrom(type))), Times.AtLeast(1));
+        //    Assert.NotNull(view);
 
-            _viewLocationMock.Reset();
-        }
+        //    _viewLocationMock.Reset();
+        //}
 
         [TestCase(typeof(String))]
         [TestCase((Type)null)]

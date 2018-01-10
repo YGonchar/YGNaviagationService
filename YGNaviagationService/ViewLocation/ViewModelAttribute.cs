@@ -5,11 +5,11 @@ namespace YG.ViewLocation
     [AttributeUsage(AttributeTargets.Class)]
     public class ViewModelAttribute : Attribute
     {
-        public Type ViewModeType { get; }
+        public Type ViewType { get; }
 
-        public ViewModelAttribute(Type viewModeType)
+        public ViewModelAttribute(Type viewType)
         {
-            ViewModeType = viewModeType;
+            ViewType = viewType;
         }
     }
 }
