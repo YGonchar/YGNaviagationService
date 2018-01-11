@@ -51,7 +51,7 @@ namespace YGNaviagationServiceTests.ViewDependencyContainer
             container = container.RegisterTabbedView<TabbedPage, FakeView, FakeView>();
 
             Assert.Greater(container.Items.Count, 0);
-            Assert.NotNull(container.Items.First().Children);
+            Assert.NotNull(container.Items.First().Value.Children);
         }
     }
 }

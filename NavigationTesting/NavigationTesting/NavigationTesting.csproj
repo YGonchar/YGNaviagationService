@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\YGNaviagationService.AutofacViewResolver\YGNaviagationService.AutofacViewResolver.csproj" />
     <ProjectReference Include="..\..\YGNaviagationService\YGNaviagationService.csproj" />
   </ItemGroup>
 

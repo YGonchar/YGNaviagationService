@@ -23,8 +23,8 @@ namespace YG.Controllers
             if (!typeof(IViewModel).GetTypeInfo().IsAssignableFrom(viewModelType))
                 throw new ArgumentException(nameof(viewModelType));
 
-            var view = _viewLocator.FindView(viewModelType);
-            return view;
+            var viewType = _viewLocator.FindViewType(viewModelType);
+            return null;
         }
     }
 }
